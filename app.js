@@ -1,12 +1,13 @@
 
-// v 1.1 done! launch!
+// v 1.0 done! launch!
 
 var pangkat = (x, y) => {
-    return Math.pow(x,y)
+    if(y == 1){
+        return x;
+    } else {
+        return x = x * pangkat(x, y-1)
+    }
 }
 
 console.log(pangkat(2,3))
 
-// 1 function recursive pangkat
-// 2 function return x ** y
-// 3 func return Math.pow(x,y)
